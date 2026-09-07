@@ -1,0 +1,15 @@
+{
+  "name": "domain-root",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Root apex domain gateway and wildcard 404 diagnostic router for trujillomingorance.com",
+  "type": "module",
+  "scripts": {
+    "deploy": "npx wrangler pages deploy public --project-name=domain-root"
+  },
+  "devDependencies": {
+    "wrangler": "^4.123.0"
+  },
+  "author": "Alberto Trujillo Mingorance",
+  "license": "MIT"
+}

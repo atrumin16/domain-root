@@ -23,10 +23,15 @@ The apex domain gateway and wildcard 404 error handler for the entire `trujillom
 
 ```
 domain-root/
-├── _headers             # Edge security policies, HSTS, and caching headers
-├── _redirects           # Apex root routing rules directing to labs.trujillomingorance.com
-├── 404.html             # Corporate diagnostic error page with Cloudflare Ray ID telemetry
-├── index.html           # Edge fallback landing page
+├── .github/
+│   └── workflows/
+│       └── ci.yml       # Edge routing assets and header integrity validation
+├── public/              # Static routing assets deployed to Cloudflare Pages
+│   ├── _headers         # Edge security policies, HSTS, and caching headers
+│   ├── _redirects       # Apex root routing rules directing to labs.trujillomingorance.com
+│   ├── 404.html         # Corporate diagnostic error page with Cloudflare Ray ID telemetry
+│   └── index.html       # Edge fallback landing page
+├── package.json         # Project manifest and deployment scripts
 └── wrangler.toml        # Cloudflare Pages deployment configuration
 ```
 
