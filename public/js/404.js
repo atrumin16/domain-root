@@ -37,7 +37,7 @@
     if (hostDisplay) hostDisplay.textContent = host;
     if (telePath) telePath.textContent = path;
 
-    var known = ['labs', 'ai', 'groq', 'focusguard', 'guides', 'guias', 'alberto', 'rewrite', 'www'];
+    var known = ['labs', 'ai', 'groq', 'focusguard', 'guides', 'guias', 'alberto', 'rewrite', 'www', 'doc', 'd', 'go', 'savings', 'finance'];
     var isKnown = known.some(function (s) { return host.indexOf(s + '.') === 0; });
     var isSubdomain = host.indexOf('.trujillomingorance.com') !== -1 && !isKnown;
 
